@@ -1,0 +1,8 @@
+This is a test of the git functionality and other shenanigans. I am editing the file junk.txt with Notepad++ connected
+with SFTP on port 22 to the csis.svsu.edu machine using the NppFTP plugin.
+The file will only be edited with Notepad++
+
+After edits have been made:
+git add --all
+git commit -m "message text here"
+git push
