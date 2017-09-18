@@ -1,0 +1,55 @@
+<!-- selector { property: value; property2 : value2; }   ~~~This entire thing is called the rule
+Locations of CSS
+Inline         
+Embeded        
+External       Separate File
+
+There is a priority for the types, it is called cascading style sheets
+
+style is an attribute of html but there is a style tag
+-->
+<!doctype html>
+<html>
+	<head>
+		<!-- link is a self closign tag-->
+		<link rel="stylesheet" href="cssNotes.css"> <!--Links to external css-->
+		<!-- style let's the computer know CSS is coming -->
+		<!--Following code is internal/embeded css-->
+		<!--Class has a higher specificity than paragraph .X means any class of X-->
+		<!--#zippy2 Refers to an id-->
+		<!--Class specifier will over rule most specificities-->
+		<style>
+			div span {color: lightgreen;}
+			.cis255 {color: brown;} 		/*Class has a higher specificity than paragraph .X means any class of X*/
+			p.cis255 {color:black;}
+			p .zippy {color:skyblue;}
+			#zippy2 {color:red;} 			/*#zippy2 Refers to an id*/
+			h1 {color: green;}
+			h2 {color:red;}
+			p, div, h3 {color: orange;}
+			p {
+				height: 200px;
+				width: 400px;
+				margin: 15px;
+				padding: 4px;
+				border: solid 2pt black;
+			}
+			h4+div {color:purple;}
+		</style>
+	</head>
+	<body>
+		<h1 class="cis255">Share your travels</h1>
+		<!--In this case style is an attribute-->
+		<h2 style="font-size: 50pt; color:pink">Description</h2> <!--Example of inline css. -->
+		<h3>Papa Bless</h3>
+		<p>Test of regular paragraph</p>
+		<p class="cis255">Zippy Doo Dah <span class="zippy">Zippy </span>Zippy <span class="zippy" id="zippy2">Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy Zippy </span></p>
+		<h4>Dogs</h4>
+		<!--The next snoopy will be a different color becasue of the code h4+div {color:purple;}-->
+		<div>Snoopy <span>Linus</span></div>
+		<div>Snoopy</div>
+		<div>Snoopy</div>
+		<div>Snoopy</div>
+		<div>Snoopy</div>
+	</body>
+<html>
