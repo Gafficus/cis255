@@ -1,0 +1,23 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Results of significant correlation</h1>
+    <p id="output">
+        <!--After the the script runs dump contents into me-->
+    </p>
+    <script src="jacques_journal.js"></script> <!-- http://eloquentjavascript.net/code/jacques_journal.js  Source of the code-->
+    <script src="04_data.js"></script> <!-- http://eloquentjavascript.net/code/chapter/04_data.js   Source of the code-->
+    <script>
+    //Code from eloquentjavascript
+      for (var event in correlations) {
+        var correlation = correlations[event];
+        if (correlation > 0.1 || correlation < -0.1){
+          document.getElementById('output').innerHTML += event + " -> " + correlation + '<br>'; //Display correlation to the page
+          console.log(event);
+          }
+    }
+    </script>
+  </body>
+</html>

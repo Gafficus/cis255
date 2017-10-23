@@ -1,0 +1,64 @@
+<html>
+	<head>
+	  <!--Title refers to what shows on tab name-->
+	  <title>Bootstrap 1</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap1.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--
+    <style>
+      .jumbotron{background-color:#f00;}
+    </style>
+    -->
+	</head>
+	<body>
+    <!--Jumbotron is a large banner that spans across the page-->
+    <!--text-center-->
+    <!--Both jumbotron and text-center are bootstrap classes-->
+		<div  class="jumbotron text-center"> <!--Can change what bootstrap originally has set for style because inline overrides-->
+			<h1>My First Bootstrap Page</h1>
+			<p>Resizing the page with adjus the sizes of elemnts</p>
+		</div>
+    <!--Container makes the margins and things look correct-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+      </div>
+  </div>
+  <br>
+  <!--Begin Example 2-->
+  <div style="background-color:#0f0"clas="container-fluid">
+      <h1>The great caterpillar</h1>
+      <p>I am so great I stretch from one side of the screen to teh other.</p>
+  </div>
+  <br>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div style="background-color:darkblue;color:white"  class="col-sm-4">
+        <h1><small>.col-sm-4</small></h1>
+      </div>
+      <div style="background-color:lightblue" class="col-sm-8">
+        <h1>I can <mark>EAT</mark> .col-sm-4</h1>
+      </div>
+    </div>
+  </div>
+	</body>
+</html>
