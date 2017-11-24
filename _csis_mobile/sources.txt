@@ -1,0 +1,5 @@
+When page is scrolled:
+http://jsfiddle.net/nick_craver/gWD66/
+
+Footer:
+http://jsfiddle.net/VNVqs/
