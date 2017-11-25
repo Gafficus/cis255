@@ -10,8 +10,13 @@ $(function() {
   */
  $(window).scroll(function() {
    $( "footer" ).hide();  //Hides footer when window scrolled 
+
+   /*
+    * Check to see if the window is at the bottom
+    */
    if($(window).scrollTop() + $(window).height() == $(document).height()) {
-    $( "footer" ).show(15);
+
+    $( "footer" ).show(15); 
    }
 	});
 });
