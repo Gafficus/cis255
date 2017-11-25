@@ -58,3 +58,26 @@
     transform: none!important;
   }
 }
+
+
+
+#wrapper {
+      position:absolute; 
+      z-index:1;
+      top:45px; bottom:48px; left:0;
+      width:100%;
+      background:#aaa;
+      overflow:auto;
+    }
+
+    #scroll-content {
+      position:absolute; 
+      z-index:1;
+      width:100%;
+      padding:0;
+      -webkit-overflow-scrolling:touch;
+      overflow:auto;
+    }
+
+
+    .hy-drawer-content { color:#fff; background:#0769ad; } aside a { color: #fff; }
