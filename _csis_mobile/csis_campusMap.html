@@ -1,5 +1,8 @@
 
 <!doctype html>
+<!-- code from:
+https://www.jqueryscript.net/menu/Mobile-Drawer-Navigation-Hy-Drawer.html
+-->
 <html>
   <head>
     <meta charset="utf-8"></meta>
@@ -14,44 +17,30 @@
     <script src="hy-drawer.js"></script>
   </head>
   <body>
-  
     <div class="wrapper">
-
-	     
-
+      <main>
         <a id="menuEl" href="#drawerEl"><span class="sr-only">Menu</span></a>
 
-        <h1>Home</h1>
-        <p class= "overviewText">Welcome to the Computer Science Application! We have the following sections:
-
-        <h2>Faculty</h2>
-        <p class = "overviewText">Take a peek at the faculty members of the Computer Science Department.</p>
-
-        <h2>CS Course Schedule Example</h2>
-        <p class = "overviewText">This section will contain a list of suggested courses and what year they should be taken for those pursuing a degree in Computer Science.</p>
-
-        <h2>CIS Course Schedule</h2>
-        <p class = "overviewText">This section will contain a list of suggested courses and what year they should be taken for those pursuing a degree in Computer Science.</p>
         
-		
-	   
-		<aside id="drawerEl" data-prevent-default="true" data-mouse-events="true" >
-		  <ul>
-			<li><a href="index.html">Home</a></li>
+      
+      </main>
 
-			<li><a href="csis_faculty.html">Faculty</a></li>
-      <li><a href="csis_programs.html">Programs</a></li>
-			<li><a href="csis_csCourses.html">CS Courses Sequence</a></li>
-			<li><a href="csis_cisCourses.html">CIS Courses Sequence</a></li>
-      <li><a href="csis_campusMap.html">SVSU Canvas Map</a></li>
-		  </ul>
-		</aside>
-    </div> <!-- end wrapper -->
-	
-	<footer>
-		<span style="color: #FFCC00">Some Footer Content</span>
-	</footer>
-    
+      <aside id="drawerEl" data-prevent-default="true" data-mouse-events="true" >
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="csis_faculty.html">Faculty</a></li>
+        <li><a href="csis_programs.html">Programs</a></li>
+        <li><a href="csis_csCourses.html">CS Courses Sequence</a></li>
+        <li><a href="csis_cisCourses.html">CIS Courses Sequence</a></li>
+        <li><a href="csis_campusMap.html">SVSU Canvas Map</a></li>
+      </ul>
+    </aside>
+    </div>
+    <img src="./src/img/map.jpg">
+    <footer>
+      <span style="color: #FFCC00">Some Footer Content</span>
+    </footer>
+
     <script>
       var ua = navigator.userAgent.toLowerCase();
       var isSafari = ua.indexOf('safari') > 0 && ua.indexOf('chrome') < 0;
@@ -72,5 +61,8 @@
     </script>
     <script src="./src/nagaffne.js"></script>
   </body>
-  
 </html>
+
+
+
+
