@@ -16,7 +16,13 @@ $(function() {
     */
    if($(window).scrollTop() + $(window).height() == $(document).height()) {
 
-    $( "footer" ).show(15); 
+    $( "footer" ).show(); 
+    $("footer").text('Created by Nathan Gaffney'); //Adjust the footer text
+    //Make sure the color of the text comes out properly
+    $('footer').css({
+      'color': '#FFCC00', //footer color to svsu gold
+      'font-size' :'10px' //force font sixe (not necessary)
+    });
    }
 	});
 });
