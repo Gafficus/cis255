@@ -1,8 +1,5 @@
 
 <!doctype html>
-<!-- code from:
-https://www.jqueryscript.net/menu/Mobile-Drawer-Navigation-Hy-Drawer.html
--->
 <html>
   <head>
     <meta charset="utf-8"></meta>
@@ -17,42 +14,42 @@ https://www.jqueryscript.net/menu/Mobile-Drawer-Navigation-Hy-Drawer.html
     <script src="hy-drawer.js"></script>
   </head>
   <body>
+  
     <div class="wrapper">
-      <main>
+
+	     
+
         <a id="menuEl" href="#drawerEl"><span class="sr-only">Menu</span></a>
 
-        <h1>Majors</h1>
+        <h1>Home</h1>
+        <p class= "overviewText">Welcome to the Computer Science Application! We have the following sections:
 
-        <ul>
-          <li>Computer Information Systems Major (B.S.)</li>
-          <li>Computer Science Major (B.S.)</li>
-        </ul>
+        <h2>Faculty</h2>
+        <p class = "overviewText">Take a peek at the faculty members of the Computer Science Department.</p>
 
-      <h1>Minors</h1>
+        <h2>CS Course Schedule Example</h2>
+        <p class = "overviewText">This section will contain a list of suggested courses and what year they should be taken for those pursuing a degree in Computer Science.</p>
 
-      <ul>
-        <li>Computer Information Systems Minor</li>
-        <li>Computer Science Minor</li>
-        <li>Cybersecurity Minor</li>
-      </ul>
-      
-      </main>
+        <h2>CIS Course Schedule</h2>
+        
+		
+	   
+		<aside id="drawerEl" data-prevent-default="true" data-mouse-events="true" >
+		  <ul>
+			<li><a href="index.html">Home</a></li>
 
-      <aside id="drawerEl" data-prevent-default="true" data-mouse-events="true" >
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="csis_faculty.html">Faculty</a></li>
-        <li><a href="csis_programs.html">Programs</a></li>
-        <li><a href="csis_csCourses.html">CS Courses Sequence</a></li>
-        <li><a href="csis_cisCourses.html">CIS Courses Sequence</a></li>
-      </ul>
-    </aside>
-    </div>
-
-    <footer>
-      <span style="color: #FFCC00">Some Footer Content</span>
-    </footer>
-
+			<li><a href="csis_faculty.html">Faculty</a></li>
+      <li><a href="csis_programs.html">Programs</a></li>
+			<li><a href="csis_csCourses.html">CS Courses Sequence</a></li>
+			<li><a href="csis_cisCourses.html">CIS Courses Sequence</a></li>
+		  </ul>
+		</aside>
+    </div> <!-- end wrapper -->
+	
+	<footer>
+		<span style="color: #FFCC00">Some Footer Content</span>
+	</footer>
+    
     <script>
       var ua = navigator.userAgent.toLowerCase();
       var isSafari = ua.indexOf('safari') > 0 && ua.indexOf('chrome') < 0;
@@ -73,8 +70,5 @@ https://www.jqueryscript.net/menu/Mobile-Drawer-Navigation-Hy-Drawer.html
     </script>
     <script src="./src/nagaffne.js"></script>
   </body>
+  
 </html>
-
-
-
-

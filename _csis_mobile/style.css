@@ -24,7 +24,7 @@
     overflow-y: auto;
     contain: strict;
     width: 300px;
-    background: #e8e8e8;
+    /*background: #e8e8e8;*/
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
     transform: translateX(0);
     -webkit-overflow-scrolling: touch;
@@ -78,6 +78,3 @@
       -webkit-overflow-scrolling:touch;
       overflow:auto;
     }
-
-
-    .hy-drawer-content { color:#fff; background:#0769ad; } aside a { color: #fff; }

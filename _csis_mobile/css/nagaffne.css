@@ -26,7 +26,31 @@ footer {
       line-height:45px;
     }
 
+/* I prefer the white, can be changed for softer colors
+.wrapper{
+  background: #B5B5B5
+}*/
+
 
 .overviewText {
   color : purple;
+}
+/*Change the background of the drawer to svsu red*/
+.hy-drawer-content{
+  background-color:#990000;
+}
+
+/*Removed dots from li of class listItem and listTitle*/
+li.listTitle, li.listItem{
+  list-style: none;
+}
+
+/*Add italics to font*/
+li.listTitle{
+  font-style: italic;
+}
+
+/*Make all quicknavigation bold*/
+.qNav{
+  font-style: bold;
 }
